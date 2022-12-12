@@ -13,3 +13,10 @@ objects, classes, methods; An explanation of the computer; hardware and software
 Flow of control; conditionals and loops; Arrays; 
 Expanding on OOP; inheritance, static and variable methods, method overloading, packages, polymorphism and interfaces; 
 Sorting and searching algorithms; Recursion; Linked lists, stacks and queues, trees and binary trees; A brief introduction to computability.
+
+Maman 11: 2 points
+Maman 12: 4 points
+Mamah 01: 1 points
+Maman 13: 4 points
+Maman 14: 3 points
+Mamah 02: 1 points
