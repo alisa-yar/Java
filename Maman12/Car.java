@@ -5,14 +5,12 @@ public class Car {
 /*********** Declarations ***********/
 	
 //Instance Variables:
-	
   private int _id; //The license number of the car
   private char _type; //The rank of the car
   private String _brand; //The manufacturer of the car
   private boolean _isManual; //boolean value representing whether the car is manual or not
 
 //Constant Values:
-	
   public static final int ID = 9999999; //the deafult id, if the input is invalid
   public static final char TYPE = 'A';  //the deafult type, if the input is invalid
  
@@ -20,16 +18,12 @@ public class Car {
 /*********** Constructors ***********/
 	
 /*Creates a new Car object  
-
 id - The license number of the car (7 digits number).
 id should be a 7 digits number, otherwise set it to 9999999.
-
 type - The rank of the car ('A','B','C' or 'D').
 type should be 'A','B','C' or 'D', otherwise set it to 'A'.
-
 brand - The manufacturer of the car.
 we can assume that car's brand is not 'null'.
-
 isManual - boolean value representing whether the car is manual or not*/
 	
   public Car (int id, char type, String brand, boolean isManual) {
@@ -97,6 +91,7 @@ isManual - boolean value representing whether the car is manual or not*/
     this._isManual = manual;
   }
 
+	
 //toString() Method:
 /*Returns a String object that represents this car in the following format:
 id:1234567 type:B brand:Toyota gear:manual (or auto)*/
@@ -139,7 +134,7 @@ return true - if 'this' car is better than the 'other' car, otherwise false.*/
       if (this._isManual == other.isManual()) //if they have the same gear
 	      return false;	//the cars are the same and there isn't a better car
       
-      else //if (this._isManual != other.isManual()) {
+      else //if (this._isManual != other.isManual()) 
         return (other.isManual());
         /*automated car is better than manual car.
         if 'other' car is manual then 'this' car is automated 
@@ -155,8 +150,7 @@ return true - if 'this' car is better than the 'other' car, otherwise false.*/
 //return true - if 'this' car is worse than the 'other' car, otherwise false.
   
   public boolean worse (Car other) {
-    return (other.better(this));
-    //true = 'this' car is worse if the 'other' car is better
+    return (other.better(this)); //true = 'this' car is worse if the 'other' car is better
   }
 
 //validId() Method:
@@ -178,8 +172,7 @@ Type should be 'A','B','C' or 'D'
 return true - if the type is valid.*/
   
   public boolean validType (char type) { 
-    //if the type is valid
-    if (type == 'A' || type == 'B' || type == 'C' || type == 'D') 
+    if (type == 'A' || type == 'B' || type == 'C' || type == 'D') //if the type is valid
       return true;
     else //invalid type
       return false;
