@@ -3,28 +3,35 @@
 public class Car {
 
 /*********** Declarations ***********/
+	
 //Instance Variables:
+	
   private int _id; //The license number of the car
   private char _type; //The rank of the car
   private String _brand; //The manufacturer of the car
   private boolean _isManual; //boolean value representing whether the car is manual or not
 
 //Constant Values:
-  //the deafult id, if the input is invalid:
-  public static final int ID = 9999999; 
-  //the deafult type, if the input is invalid:
-  public static final char TYPE = 'A';
+	
+  public static final int ID = 9999999; //the deafult id, if the input is invalid
+  public static final char TYPE = 'A';  //the deafult type, if the input is invalid
  
 
 /*********** Constructors ***********/
-  /* Creates a new Car object
-  id should be a 7 digits number, otherwise set it to 9999999.
-  type should be 'A','B','C' or 'D', otherwise set it to 'A'.
-  we can assume that car's brand is not 'null'.
-  id - The license number of the car (7 digits number)
-  type - The rank of the car ('A','B','C' or 'D')
-  brand - The manufacturer of the car
-  isManual - boolean value representing whether the car is manual or not */
+	
+/*Creates a new Car object  
+
+id - The license number of the car (7 digits number).
+id should be a 7 digits number, otherwise set it to 9999999.
+
+type - The rank of the car ('A','B','C' or 'D').
+type should be 'A','B','C' or 'D', otherwise set it to 'A'.
+
+brand - The manufacturer of the car.
+we can assume that car's brand is not 'null'.
+
+isManual - boolean value representing whether the car is manual or not*/
+	
   public Car (int id, char type, String brand, boolean isManual) {
     this._brand = brand;
     this._isManual = isManual;
@@ -39,9 +46,8 @@ public class Car {
   }
 
 //Copy Constructor:
-/*Copy Constructor for Car 
-Construct a car with the same coordinates as other car.
-other - The Car object that we will copy. */
+//Construct a car with the same coordinates as other car.
+
   public Car (Car other) {
     this._id = other._id;
     this._type = other._type;
@@ -51,6 +57,7 @@ other - The Car object that we will copy. */
 
 
 /*********** Methods ***********/
+	
 //Get() Method:
  
   public int getId() {
@@ -91,8 +98,8 @@ other - The Car object that we will copy. */
   }
 
 //toString() Method:
-/* Returns a String object that represents this car in the following format:
-id:1234567 type:B brand:Toyota gear:manual (or auto) */
+/*Returns a String object that represents this car in the following format:
+id:1234567 type:B brand:Toyota gear:manual (or auto)*/
   
   public String toString () {
     String gear = ""; //new string to represent the gear
@@ -107,8 +114,8 @@ id:1234567 type:B brand:Toyota gear:manual (or auto) */
 
 //equals() Method:
 /*Comparison between strings is performed using the equals method of the String class.
-Cars considered as same if they have the same type, brand and gear
-returns true - if the cars are the same, otherwise false */
+Cars considered as same if they have the same type, brand and gear.
+returns true - if the cars are the same, otherwise false.*/
   
   public boolean equals (Car other) {
     if (this._type == other.getType() &&
@@ -120,11 +127,11 @@ returns true - if the cars are the same, otherwise false */
   }
 
 //better() Method:
-/* Checks if 'this' car is better than the 'other' car
+/*Checks if 'this' car is better than the 'other' car.
 A car is considered better than another car if it has a higher type (rank).
 A < B < C < D (D is the highest and A is the lowest).
 If both cars have the same type, the automated car is better than the manual.
-return true - if 'this' car is better than the 'other' car, otherwise false. */
+return true - if 'this' car is better than the 'other' car, otherwise false.*/
   
   public boolean better (Car other) {
     if (this._type == other.getType()) { //if the cars have the same type			
@@ -145,7 +152,7 @@ return true - if 'this' car is better than the 'other' car, otherwise false. */
   }
 
 //worse() Method:
-// return true - if 'this' car is worse than the 'other' car, otherwise false.
+//return true - if 'this' car is worse than the 'other' car, otherwise false.
   
   public boolean worse (Car other) {
     return (other.better(this));
@@ -153,8 +160,8 @@ return true - if 'this' car is better than the 'other' car, otherwise false. */
   }
 
 //validId() Method:
-/* Checks if the id is valid (7 digits and positive)
-return true - if the id is valid. */
+/*Checks if the id is valid (7 digits and positive)
+return true - if the id is valid.*/
   
   public boolean validId (int id) {
     String strId = "" + id;
@@ -166,9 +173,9 @@ return true - if the id is valid. */
 
 
 //validType() Method:
-/* Checks if the type is valid
+/*Checks if the type is valid
 Type should be 'A','B','C' or 'D'
-return true - if the type is valid. */
+return true - if the type is valid.*/
   
   public boolean validType (char type) { 
     //if the type is valid
