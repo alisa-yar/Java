@@ -33,9 +33,9 @@ class Triangle2 {
             }//the first "if" inside the first "else if" (checks if 2/3 are equal)
 
             // right-angle triangle check
-            else if ((Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) 
-            || (Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2)) 
-            || (Math.pow(c, 2) + Math.pow(b, 2) == Math.pow(a, 2))){
+            else if ((Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) ||
+                     (Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2)) || 
+                     (Math.pow(c, 2) + Math.pow(b, 2) == Math.pow(a, 2))){
                     
                 System.out.println("The numbers: " + a + " , " + b + " and " + c 
                     + " represent a right-angle triangle");
