@@ -9,10 +9,10 @@ The programming paradigm is Object Oriented Programming (OOP) and the language u
 
 
 Topics: 
-objects, classes, methods; An explanation of the computer; hardware and software concepts; 
+objects; classes; methods; An explanation of the computer; hardware and software concepts; 
 Flow of control; conditionals and loops; Arrays; 
-Expanding on OOP; inheritance, static and variable methods, method overloading, packages, polymorphism and interfaces; 
-Sorting and searching algorithms; Recursion; Linked lists, stacks and queues, trees and binary trees; A brief introduction to computability.
+Expanding on OOP; inheritance; static and variable methods; method overloading; packages; polymorphism and interfaces; 
+Sorting and searching algorithms; Recursion; Linked lists; stacks and queues; trees and binary trees; A brief introduction to computability.
 
 Maman 11: 2 points (12/11/2022)
 Maman 12: 4 points (03/12/2022)
